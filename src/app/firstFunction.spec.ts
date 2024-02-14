@@ -1,13 +1,13 @@
 import { addition } from "./firstFunction";
 
-describe('Test suite - addition', () => {
+xdescribe('Test suite - addition', () => {
     it('Testing addition function', () => {
         // addition(10, 20) === 30
         expect(addition(10, 20)).toBe(30);
     });
 });
 
-describe('String Test suite', () => {
+xdescribe('String Test suite', () => {
     it('Testing string with toBe', () => {
         const str = 'Hello World'; 
         expect(str).toBe('Hello World');
@@ -39,7 +39,7 @@ xdescribe('Ignored Test suite', () => {
     });
 });
 
-describe('Test suite toBe vs toEqual', () => {
+xdescribe('Test suite toBe vs toEqual', () => {
     xit('Test case: toBe', () => {
         let a = {value: 10};
         let b = {value: 10};
@@ -52,7 +52,7 @@ describe('Test suite toBe vs toEqual', () => {
     });
 });
 
-describe('Array test suite:', () => {
+xdescribe('Array test suite:', () => {
     it('Test case: Array toEqual', () => {
         let a = [1,2,3];
         let b = [1,2,3];

@@ -22,4 +22,13 @@ export class CustomerReservationComponent implements OnInit {
   unregisterCustomer() {
     return -- this.customerCount;
   }
+
+  reserveRoom(): boolean {
+    let roomReserved = false;
+    if(this.customerCount < this.hotelRoomCapacity) {
+      this.customerCount++;
+      roomReserved = true;
+    }
+    return roomReserved;
+  }
 }
