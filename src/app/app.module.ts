@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerReservationComponent } from './component/customer-reservation/customer-reservation.component';
+import { EmployeeComponent } from './component/employee/employee.component';
+import { EventTestComponent } from './component/event-test/event-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomerReservationComponent
+    CustomerReservationComponent,
+    EmployeeComponent,
+    EventTestComponent
   ],
   imports: [
     BrowserModule,
